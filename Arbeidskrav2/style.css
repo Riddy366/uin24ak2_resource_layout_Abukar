@@ -1,7 +1,7 @@
 html {
-    background-color: #585858;
+    background-color: #58699D;
+    
 }
-
 
 body{
     width: 1500px;
@@ -11,9 +11,13 @@ body{
     margin: 0;
     justify-content: center;
 }
+
 .center {
-    width: 50%; /* Endre bredden etter behov */
+    width: 50%;
     margin: auto;
+}
+article{
+    font-family: "Roborto", sans-serif; 
 }
 button {
     background-color: transparent;
@@ -21,6 +25,8 @@ button {
     text-decoration: none;
     color: #E1E5EE;
     font-size: 20px;
+    font-weight: bold;
+    font-family: "Monterrat", sans-serif; 
 }
 
 ul {
@@ -31,7 +37,5 @@ ul {
     justify-content: space-between;
     background-color: #2A324B;
     list-style-type: none;
-    
 }
-
 
