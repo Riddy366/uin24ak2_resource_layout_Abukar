@@ -1,0 +1,37 @@
+html {
+    background-color: #585858;
+}
+
+
+body{
+    width: 1500px;
+    height: 500px;
+    background-color:#E1E5EE;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+.center {
+    width: 50%; /* Endre bredden etter behov */
+    margin: auto;
+}
+button {
+    background-color: transparent;
+    border:none;
+    text-decoration: none;
+    color: #E1E5EE;
+    font-size: 20px;
+}
+
+ul {
+    padding: 2rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2A324B;
+    list-style-type: none;
+    
+}
+
+
