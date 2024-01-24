@@ -10,14 +10,14 @@ function updateContent(category, title) {
         resourceContent.innerHTML = `
             <h2>${selectedResource.category}</h2>
             <p>${selectedResource.text}</p>
-
         `;
     }
+    
 }
 
-console.log(resources.sources)
 
 
+console.log()
 // Funksjon for knappetrykk
 function handleButtonClick(category) {
     console.log(`Button clicked for category: ${category}`);

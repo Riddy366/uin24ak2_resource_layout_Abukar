@@ -12,14 +12,13 @@ body{
     justify-content: center;
 }
 
-.center {
-    width: 50%;
-    margin: auto;
-}
 article{
+    width: 100%;
+    max-width: 850px;
     font-family: "Roborto", sans-serif; 
     background-color: #fff;
-    padding: 2rem;
+    padding: 3rem;
+    position: relative;
 }
 button {
     background-color: transparent;
@@ -29,16 +28,20 @@ button {
     font-size: 20px;
     font-weight: bold;
     font-family: "Monterrat", sans-serif; 
+    padding: 2rem;
+    margin: 10px;
+    background-color: #2A324B;
+}
+button:active {
+    background-color: #fff;
+    color: #2A324B;
+
 }
 
 ul {
-    padding: 2rem;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2A324B;
     list-style-type: none;
+    display: flex;
+   
 }
 
 
