@@ -18,6 +18,8 @@ body{
 }
 article{
     font-family: "Roborto", sans-serif; 
+    background-color: #fff;
+    padding: 2rem;
 }
 button {
     background-color: transparent;
@@ -38,4 +40,5 @@ ul {
     background-color: #2A324B;
     list-style-type: none;
 }
+
 
