@@ -12,9 +12,20 @@ function updateContent(category, title) {
             <p>${selectedResource.text}</p>
         `;
     }
+   
+ 
 }
 
-console.log()
+
+resources.map(resource => (
+    resource.sources.map(source => ({
+        title: source.title,
+        url: source.url
+    }))
+))
+console.log(resources.url)
+
+
 // Funksjon for knappetrykk
 function handleButtonClick(category) {
     console.log(`Button clicked for category: ${category}`);
