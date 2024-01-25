@@ -12,10 +12,7 @@ function updateContent(category, title) {
             <p>${selectedResource.text}</p>
         `;
     }
-    
 }
-
-
 
 console.log()
 // Funksjon for knappetrykk
