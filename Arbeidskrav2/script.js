@@ -6,7 +6,7 @@ function updateContent(category) {
 
     if (selectedResource) {
         const titleURL = selectedResource.sources.map(source => `
-            <p><a href="${source.url}" target="_blank">${source.title}</a></p>
+            <li><a href="${source.url}" target="_blank">${source.title}</a></li>
         `).join('');
 
         resourceContent.innerHTML = `
