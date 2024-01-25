@@ -11,7 +11,7 @@ body{
 article{
     width: 100%;
     max-width: 850px;
-    font-family: "Roborto", sans-serif; 
+    font-family: "Montserrat", sans-serif; 
     background-color: #fff;
     padding: 3rem;
     position: relative;
@@ -23,7 +23,7 @@ button {
     color: #E1E5EE;
     font-size: 20px;
     font-weight: bold;
-    font-family: "Monterrat", sans-serif; 
+    font-family: "Roboto", sans-serif; 
     padding: 2rem;
     margin: 10px;
     background-color: #2A324B;
@@ -35,7 +35,11 @@ button:active {
 
 ul {
     display: flex;
-}
+    list-style-type: none;
 
+}
+li a {
+    color: #58699D;
+}
 
 
