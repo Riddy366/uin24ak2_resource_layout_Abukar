@@ -1,50 +1,34 @@
-let recourceHTML = "";
+let resourceHTML = "";
+const resourceContent = document.getElementById("resourceContent");
 
-// Funksjon for å oppdatere innholdet basert på kategori
-function updateContent(category, title) {
-    const resourceContent = document.getElementById("resourceContent");
+function updateContent(category) {
     const selectedResource = resources.find(resource => resource.category === category);
 
-
     if (selectedResource) {
+        const titleURL = selectedResource.sources.map(source => `
+            <p><a href="${source.url}" target="_blank">${source.title}</a></p>
+        `).join('');
+
         resourceContent.innerHTML = `
             <h2>${selectedResource.category}</h2>
             <p>${selectedResource.text}</p>
+            ${titleURL}
         `;
     }
-   
- 
 }
 
-
-resources.map(resource => (
-    resource.sources.map(source => ({
-        title: source.title,
-        url: source.url
-    }))
-))
-console.log(resources.url)
-
-
-// Funksjon for knappetrykk
-function handleButtonClick(category) {
+function buttonClick(category) {
     console.log(`Button clicked for category: ${category}`);
     updateContent(category);
 }
 
-
-// Generer HTML for ressurslisten
 resources.forEach((resource) => {
-    recourceHTML += `
-        <li><a href="#"><button onclick="handleButtonClick('${resource.category}')">${resource.category}</button></a></li>
-    `;
+    resourceHTML += `<li><button onclick="buttonClick('${resource.category}')">${resource.category}</button></li>`;
 });
 
-// Sett HTML for ressurslisten
 const resourceList = document.getElementById("resourceList");
-resourceList.innerHTML = recourceHTML;
+resourceList.innerHTML = resourceHTML;
 
-// Vis innholdet for første kategori som standard
 if (resources.length > 0) {
     updateContent(resources[0].category);
 }
